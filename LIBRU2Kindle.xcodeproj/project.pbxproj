@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F160E3C01A4F207A0084316C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F160E3BF1A4F207A0084316C /* AppDelegate.m */; };
+		F160E3C21A4F207A0084316C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F160E3C11A4F207A0084316C /* main.m */; };
+		F160E3C51A4F207A0084316C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F160E3C41A4F207A0084316C /* ViewController.m */; };
+		F160E3C71A4F207A0084316C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160E3C61A4F207A0084316C /* Images.xcassets */; };
+		F160E3CA1A4F207A0084316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160E3C81A4F207A0084316C /* Main.storyboard */; };
+		F160E3E01A4F22BD0084316C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F160E3DF1A4F22BD0084316C /* WebKit.framework */; };
+		F160E3E21A4F3CD00084316C /* kindlegen in Resources */ = {isa = PBXBuildFile; fileRef = F160E3E11A4F3CD00084316C /* kindlegen */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F160E3B91A4F207A0084316C /* LIBRU2Kindle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIBRU2Kindle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F160E3BD1A4F207A0084316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F160E3BE1A4F207A0084316C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F160E3BF1A4F207A0084316C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F160E3C11A4F207A0084316C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F160E3C31A4F207A0084316C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F160E3C41A4F207A0084316C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F160E3C61A4F207A0084316C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F160E3C91A4F207A0084316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F160E3D41A4F207A0084316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F160E3D51A4F207A0084316C /* LIBRU_to_KindleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIBRU_to_KindleTests.m; sourceTree = "<group>"; };
+		F160E3DF1A4F22BD0084316C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F160E3E11A4F3CD00084316C /* kindlegen */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kindlegen; sourceTree = "<group>"; };
+		F160E3E31A4F655C0084316C /* LIBRU to Kindle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "LIBRU to Kindle.entitlements"; sourceTree = "<group>"; };
+		F160E3E41A4F70880084316C /* LIBRU2Kindle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LIBRU2Kindle.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F160E3B61A4F207A0084316C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F160E3E01A4F22BD0084316C /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F160E3B01A4F207A0084316C = {
+			isa = PBXGroup;
+			children = (
+				F160E3E41A4F70880084316C /* LIBRU2Kindle.entitlements */,
+				F160E3DF1A4F22BD0084316C /* WebKit.framework */,
+				F160E3BB1A4F207A0084316C /* LIBRU to Kindle */,
+				F160E3D21A4F207A0084316C /* LIBRU to KindleTests */,
+				F160E3BA1A4F207A0084316C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F160E3BA1A4F207A0084316C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F160E3B91A4F207A0084316C /* LIBRU2Kindle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F160E3BB1A4F207A0084316C /* LIBRU to Kindle */ = {
+			isa = PBXGroup;
+			children = (
+				F160E3E31A4F655C0084316C /* LIBRU to Kindle.entitlements */,
+				F160E3E11A4F3CD00084316C /* kindlegen */,
+				F160E3BE1A4F207A0084316C /* AppDelegate.h */,
+				F160E3BF1A4F207A0084316C /* AppDelegate.m */,
+				F160E3C31A4F207A0084316C /* ViewController.h */,
+				F160E3C41A4F207A0084316C /* ViewController.m */,
+				F160E3C61A4F207A0084316C /* Images.xcassets */,
+				F160E3C81A4F207A0084316C /* Main.storyboard */,
+				F160E3BC1A4F207A0084316C /* Supporting Files */,
+			);
+			path = "LIBRU to Kindle";
+			sourceTree = "<group>";
+		};
+		F160E3BC1A4F207A0084316C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F160E3BD1A4F207A0084316C /* Info.plist */,
+				F160E3C11A4F207A0084316C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F160E3D21A4F207A0084316C /* LIBRU to KindleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F160E3D51A4F207A0084316C /* LIBRU_to_KindleTests.m */,
+				F160E3D31A4F207A0084316C /* Supporting Files */,
+			);
+			path = "LIBRU to KindleTests";
+			sourceTree = "<group>";
+		};
+		F160E3D31A4F207A0084316C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F160E3D41A4F207A0084316C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F160E3B81A4F207A0084316C /* LIBRU2Kindle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F160E3D91A4F207A0084316C /* Build configuration list for PBXNativeTarget "LIBRU2Kindle" */;
+			buildPhases = (
+				F160E3B51A4F207A0084316C /* Sources */,
+				F160E3B61A4F207A0084316C /* Frameworks */,
+				F160E3B71A4F207A0084316C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LIBRU2Kindle;
+			productName = "LIBRU to Kindle";
+			productReference = F160E3B91A4F207A0084316C /* LIBRU2Kindle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F160E3B11A4F207A0084316C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = SDWR;
+				TargetAttributes = {
+					F160E3B81A4F207A0084316C = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F160E3B41A4F207A0084316C /* Build configuration list for PBXProject "LIBRU2Kindle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F160E3B01A4F207A0084316C;
+			productRefGroup = F160E3BA1A4F207A0084316C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F160E3B81A4F207A0084316C /* LIBRU2Kindle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F160E3B71A4F207A0084316C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F160E3C71A4F207A0084316C /* Images.xcassets in Resources */,
+				F160E3E21A4F3CD00084316C /* kindlegen in Resources */,
+				F160E3CA1A4F207A0084316C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F160E3B51A4F207A0084316C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F160E3C51A4F207A0084316C /* ViewController.m in Sources */,
+				F160E3C21A4F207A0084316C /* main.m in Sources */,
+				F160E3C01A4F207A0084316C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F160E3C81A4F207A0084316C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F160E3C91A4F207A0084316C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F160E3D71A4F207A0084316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F160E3D81A4F207A0084316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F160E3DA1A4F207A0084316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LIBRU to Kindle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/libetpan",
+				);
+				PRODUCT_NAME = LIBRU2Kindle;
+			};
+			name = Debug;
+		};
+		F160E3DB1A4F207A0084316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LIBRU to Kindle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/libetpan",
+				);
+				PRODUCT_NAME = LIBRU2Kindle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F160E3B41A4F207A0084316C /* Build configuration list for PBXProject "LIBRU2Kindle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F160E3D71A4F207A0084316C /* Debug */,
+				F160E3D81A4F207A0084316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F160E3D91A4F207A0084316C /* Build configuration list for PBXNativeTarget "LIBRU2Kindle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F160E3DA1A4F207A0084316C /* Debug */,
+				F160E3DB1A4F207A0084316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F160E3B11A4F207A0084316C /* Project object */;
+}
