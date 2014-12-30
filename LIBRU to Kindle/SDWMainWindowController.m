@@ -17,8 +17,6 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     self.window.delegate = self;
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
 - (void)windowDidUpdate:(NSNotification *)notification {
