@@ -10,6 +10,7 @@
 
 @interface ViewController () <WKNavigationDelegate>
 @property (strong) WKWebView *webView;
+@property (strong) IBOutlet NSButton *generateButton;
 @property (strong) NSString *path;
 @property (strong) IBOutlet NSTextField *bookURL;
 @end
@@ -18,6 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.view.wantsLayer = YES;
+    self.view.layer.borderWidth = 2;
+    self.view.layer.borderColor = [NSColor blackColor].CGColor;
+    self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
+
+    self.generateButton.wantsLayer = YES;
+    self.generateButton.layer.backgroundColor = [NSColor whiteColor].CGColor;
+
+    self.generateButton.layer.borderWidth = 2;
+    self.generateButton.layer.borderColor = [NSColor blackColor].CGColor;
+
 
     [[NSNotificationCenter defaultCenter] addObserverForName:NSTaskDidTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
 

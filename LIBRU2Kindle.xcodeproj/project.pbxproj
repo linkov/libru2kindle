@@ -14,6 +14,7 @@
 		F160E3CA1A4F207A0084316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160E3C81A4F207A0084316C /* Main.storyboard */; };
 		F160E3E01A4F22BD0084316C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F160E3DF1A4F22BD0084316C /* WebKit.framework */; };
 		F160E3E21A4F3CD00084316C /* kindlegen in Resources */ = {isa = PBXBuildFile; fileRef = F160E3E11A4F3CD00084316C /* kindlegen */; };
+		F1A618B11A535CA6006EA313 /* SDWMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A618B01A535CA6006EA313 /* SDWMainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		F160E3E11A4F3CD00084316C /* kindlegen */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kindlegen; sourceTree = "<group>"; };
 		F160E3E31A4F655C0084316C /* LIBRU to Kindle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "LIBRU to Kindle.entitlements"; sourceTree = "<group>"; };
 		F160E3E41A4F70880084316C /* LIBRU2Kindle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LIBRU2Kindle.entitlements; sourceTree = "<group>"; };
+		F1A618AF1A535CA6006EA313 /* SDWMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWMainWindowController.h; sourceTree = "<group>"; };
+		F1A618B01A535CA6006EA313 /* SDWMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWMainWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				F160E3E11A4F3CD00084316C /* kindlegen */,
 				F160E3BE1A4F207A0084316C /* AppDelegate.h */,
 				F160E3BF1A4F207A0084316C /* AppDelegate.m */,
+				F1A618AF1A535CA6006EA313 /* SDWMainWindowController.h */,
+				F1A618B01A535CA6006EA313 /* SDWMainWindowController.m */,
 				F160E3C31A4F207A0084316C /* ViewController.h */,
 				F160E3C41A4F207A0084316C /* ViewController.m */,
 				F160E3C61A4F207A0084316C /* Images.xcassets */,
@@ -185,6 +190,7 @@
 				F160E3C51A4F207A0084316C /* ViewController.m in Sources */,
 				F160E3C21A4F207A0084316C /* main.m in Sources */,
 				F160E3C01A4F207A0084316C /* AppDelegate.m in Sources */,
+				F1A618B11A535CA6006EA313 /* SDWMainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

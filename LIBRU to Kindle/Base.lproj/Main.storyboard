@@ -649,8 +649,8 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="SDWMainWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Lib.ru to Kindle" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -669,20 +669,24 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="152"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-eJ-BSS">
-                                <rect key="frame" x="20" y="228" width="440" height="22"/>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-eJ-BSS">
+                                <rect key="frame" x="20" y="90" width="440" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Lib.ru book URL (Ex:http://lib.ru/DOWLATOW/zona.txt)" drawsBackground="YES" id="ZhP-LO-hE3">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-zl-0aB">
-                                <rect key="frame" x="192" y="170" width="96" height="31"/>
-                                <buttonCell key="cell" type="push" title="Generate" alternateTitle="Generating" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ql1-Xx-KcN">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-zl-0aB">
+                                <rect key="frame" x="198" y="29" width="84" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bkI-VJ-tk2"/>
+                                    <constraint firstAttribute="width" constant="84" id="iXV-IB-AHt"/>
+                                </constraints>
+                                <buttonCell key="cell" type="smallSquare" title="Generate" alternateTitle="Generating" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="ql1-Xx-KcN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -691,9 +695,18 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EeV-zl-0aB" secondAttribute="bottom" constant="30" id="BAs-Fk-hT3"/>
+                            <constraint firstAttribute="trailing" secondItem="Bf2-eJ-BSS" secondAttribute="trailing" constant="20" id="Dut-G4-9iD"/>
+                            <constraint firstItem="EeV-zl-0aB" firstAttribute="top" secondItem="Bf2-eJ-BSS" secondAttribute="bottom" constant="30" id="MLj-iD-Cfa"/>
+                            <constraint firstAttribute="centerX" secondItem="EeV-zl-0aB" secondAttribute="centerX" id="Sj0-4t-kRF"/>
+                            <constraint firstItem="Bf2-eJ-BSS" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="orm-cU-Dnt"/>
+                            <constraint firstItem="Bf2-eJ-BSS" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="s4D-RF-QYX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bookURL" destination="Bf2-eJ-BSS" id="qjG-Sh-xTj"/>
+                        <outlet property="generateButton" destination="EeV-zl-0aB" id="lLq-eG-nnV"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
