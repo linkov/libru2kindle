@@ -13,6 +13,7 @@
 @property (strong) IBOutlet NSButton *generateButton;
 @property (strong) NSString *path;
 @property (strong) IBOutlet NSTextField *bookURL;
+@property (strong) IBOutlet NSProgressIndicator *progressIndicator;
 @end
 
 @implementation ViewController
@@ -34,6 +35,7 @@
 
     [[NSNotificationCenter defaultCenter] addObserverForName:NSTaskDidTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
 
+        [self.progressIndicator stopAnimation:nil];
         NSURL *fileURL = [NSURL fileURLWithPath:self.path];
         NSURL *folderURL = [fileURL URLByDeletingLastPathComponent];
         [[NSWorkspace sharedWorkspace] openURL: folderURL];
@@ -44,11 +46,14 @@
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
 
+    [self.progressIndicator startAnimation:nil];
+
     NSString *jsToGetHTMLSource = @"document.documentElement.outerHTML";
     [self.webView evaluateJavaScript:jsToGetHTMLSource completionHandler:^(NSString *obj, NSError *err) {
 
         if (err) {
             NSLog(@"js error - %@",err);
+            [self.progressIndicator stopAnimation:nil];
             return;
         }
 
@@ -61,6 +66,7 @@
 
         if (saveError) {
             NSLog(@"save error - %@",saveError);
+            [self.progressIndicator stopAnimation:nil];
             return;
         }
 
@@ -89,6 +95,8 @@
 
 
 - (IBAction)generateBook:(id)sender {
+
+    [self.progressIndicator startAnimation:nil];
 
     NSString *fileName = [[[self.bookURL.stringValue lastPathComponent] stringByReplacingOccurrencesOfString:@".txt" withString:@""] stringByAppendingString:@".html"];
 
