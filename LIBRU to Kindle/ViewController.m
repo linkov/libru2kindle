@@ -12,7 +12,7 @@
 @property (strong) WKWebView *webView;
 @property (strong) IBOutlet NSButton *generateButton;
 @property (strong) NSString *path;
-@property (strong) IBOutlet NSTextField *bookURL;
+@property (strong) IBOutlet NSTextField *bookURLField;
 @property (strong) IBOutlet NSProgressIndicator *progressIndicator;
 @end
 
@@ -22,8 +22,6 @@
 	[super viewDidLoad];
 
 	self.view.wantsLayer = YES;
-	self.view.layer.borderWidth = 2;
-	self.view.layer.borderColor = [NSColor blackColor].CGColor;
 	self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
 
 	self.generateButton.wantsLayer = YES;
@@ -92,7 +90,7 @@
 
 	[self.progressIndicator startAnimation:nil];
 
-	NSString *fileName = [[[self.bookURL.stringValue lastPathComponent] stringByReplacingOccurrencesOfString:@".txt" withString:@""] stringByAppendingString:@".html"];
+	NSString *fileName = [[[self.bookURLField.stringValue lastPathComponent] stringByReplacingOccurrencesOfString:@".txt" withString:@""] stringByAppendingString:@".html"];
 
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -147,7 +145,7 @@
 	self.webView = [[WKWebView alloc]initWithFrame:self.view.bounds configuration:conf];
 	self.webView.navigationDelegate = self;
 
-	NSURL *authURL = [NSURL URLWithString:self.bookURL.stringValue];
+	NSURL *authURL = [NSURL URLWithString:self.bookURLField.stringValue];
 	NSURLRequest *request = [NSURLRequest requestWithURL:authURL];
 	[self.webView loadRequest:request];
 }

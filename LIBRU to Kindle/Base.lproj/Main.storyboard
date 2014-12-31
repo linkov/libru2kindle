@@ -680,15 +680,15 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-zl-0aB">
-                                <rect key="frame" x="198" y="30" width="84" height="30"/>
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-zl-0aB">
+                                <rect key="frame" x="198" y="39" width="84" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bkI-VJ-tk2"/>
                                     <constraint firstAttribute="width" constant="84" id="iXV-IB-AHt"/>
                                 </constraints>
-                                <buttonCell key="cell" type="smallSquare" title="Generate" alternateTitle="Generating" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="ql1-Xx-KcN">
+                                <buttonCell key="cell" type="inline" title="Generate" bezelStyle="inline" alignment="center" inset="2" id="ql1-Xx-KcN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="generateBook:" target="XfG-lQ-9wD" id="6Aa-iy-JHh"/>
@@ -710,7 +710,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bookURL" destination="Bf2-eJ-BSS" id="qjG-Sh-xTj"/>
+                        <outlet property="bookURLField" destination="Bf2-eJ-BSS" id="t1b-8e-pe0"/>
                         <outlet property="generateButton" destination="EeV-zl-0aB" id="lLq-eG-nnV"/>
                         <outlet property="progressIndicator" destination="Rsv-A3-amW" id="dUS-aM-Ax4"/>
                     </connections>
